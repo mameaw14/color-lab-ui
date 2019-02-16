@@ -1,0 +1,13 @@
+extends: airbnb
+rules:
+  semi:
+    - 2
+    - never
+  indent:
+    - 2
+    - tab
+  react/prop-types: off
+  react/jsx-indent:
+    - 2
+    - tab
+  no-tabs: off
