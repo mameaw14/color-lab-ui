@@ -23,15 +23,15 @@ const StyledAlert = styled(Alert)`
 	align-items: center;
 	padding: 25px;
 	border-radius: 4px;
-	background-color: ${props => props.theme.a100};
-	border: 0.8px solid ${props => props.theme.a300};
+	background-color: ${props => props.theme[100]};
+	border: 0.8px solid ${props => props.theme[300]};
 	.icon {
 		margin-right: 25px;
-		color: ${props => props.theme.a700};
+		color: ${props => props.theme[700]};
 		background-color: white;
 		border-radius: 50%;
-		border: 3px solid ${props => props.theme.a500};
-		box-shadow: 0 0 0 10px ${props => props.theme.a300}
+		border: 3px solid ${props => props.theme[500]};
+		box-shadow: 0 0 0 10px ${props => props.theme[300]}
 		width: 1.75em;
 		height: 1.75em;
 		display: flex;
@@ -41,10 +41,10 @@ const StyledAlert = styled(Alert)`
 	.title {
 		font-size: 21px;
 		font-weight: 600;
-		color: ${props => props.theme.a900};
+		color: ${props => props.theme[900]};
 	}
 	.des {
-		color: ${props => props.theme.a700};
+		color: ${props => props.theme[700]};
 	}
 `
 
