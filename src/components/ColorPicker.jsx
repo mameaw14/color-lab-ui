@@ -1,6 +1,8 @@
+import { CustomPicker } from 'react-color'
 import React from 'react'
 import styled from 'styled-components'
-import { CustomPicker } from 'react-color'
+
+import ColorBox from './ColorBox'
 
 const convertHSL = hsl => `hsl(${hsl.h}, ${hsl.s * 100}%, ${hsl.l * 100}%)`
 const sum = (a, b) => {
@@ -11,16 +13,8 @@ const sum = (a, b) => {
 	return result
 }
 const rotateHue = (hue, diff) => (hue + diff) % 360
-const StyledColorBox = styled.div.attrs(props => ({
-	style: {
-		'background-color': props.bgColor,
-	},
-}))`
-	width: 100%;
-	height: 100%;
-	border-radius: 4px;
+const StyledColorBox = styled(ColorBox)`
 	grid-area: ${props => props.area};
-	box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.2);
 `
 const ColorPickerContainer = styled.div`
 	display: grid;

@@ -19,7 +19,6 @@ class App extends React.Component {
 	}
 
 	setColor = colorName => (color) => {
-		console.log(color)
 		const { colors } = this.state
 		const newColor = color
 		this.setState({
